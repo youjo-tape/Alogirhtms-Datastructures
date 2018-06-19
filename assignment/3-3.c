@@ -15,7 +15,7 @@ int main(void){
     for(i = 0; i < n; i ++) scanf("%d", &a[i]);
     
     // 二分探索
-    int lb = -1, ub = 1000000001;
+    int lb = 0, ub = 1000000001;
     while(ub - lb > 1){
         int m = (lb+ub)/2;
         if(p(m, a, n, k)) ub = m;
